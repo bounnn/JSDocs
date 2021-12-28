@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle&display=swap');
+
+* {
+  font-size: 25px;
+}
+
+html, body {
+  background-color: #222;
+  font-family: 'Dongle', sans-serif;
+  line-height: 1.2;
+}
+
+p {
+  text-indent: 35px;
+}
+
+header {
+  margin: 10px;
+  text-align: center;
+  font-size: 3rem;
+  color: #93eb8d;
+}
+
+#navbar {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 220px;
+  height: 100%;
+  border-right: 1px solid;
+  border-color: rgba(255, 255, 255, 0.3);
+  text-align: center;
+}
+
+#navbar header{
+  font-size: 1.8rem;
+}
+
+#navbar ul {
+  height: 80%;
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#navbar li {
+  list-style: none;
+  width: 100%;
+}
+
+#navbar a {
+  display: block;
+  padding: 10px 30px;
+  color: #fef87d;
+  text-decoration: none;
+  cursor: pointer;
+}
+#navbar a:hover {
+  color: #fef85c;
+  text-decoration: underline;
+}
+
+#main-doc {
+  margin-left: 220px;
+  padding: 30px;
+}
+
+#main-doc header {
+  text-align: left;
+}
+
+section article {
+  color: #eee;
+  margin: 15px;
+  font-size: 0.96em;
+}
+
+code {
+  display: block;
+  padding: 15px;
+  margin: 10px;
+  
+  background-color: #ffff;
+  border-radius: 5px;
+  
+  color: #000;
+  font-size: 0.6rem;
+  line-height: 2;
+  text-align: left;
+  white-space: pre-line;
+}
+
+
+@media only screen and (max-width: 815px) {
+  #navbar ul {
+    height: 200px;
+  }
+
+  #navbar {
+    position: absolute;
+    width: 100%;
+    max-height: 320px;
+    border: none;
+  }
+  #navbar ul {
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid #333;
+  }
+
+  #main-doc {
+    margin-left: 0;
+    margin-top: 300px;
+  }
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #222;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #91ff91;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #5bd858; 
+}
